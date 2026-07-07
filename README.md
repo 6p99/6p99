@@ -13,7 +13,6 @@ stack   = ["TypeScript", "Node.js", "Python", "HTML"]
 ops     = ["Windows", "Git"]
 
 
-
 CONTACT
 $ contact --discord "mjhol"
 $ contact --status  "Coding without a purpose, just enjoying the process."
