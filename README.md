@@ -24,7 +24,7 @@ LAST_UPDATED:  2026-07-07 00:00 UTC
 
 | PROJECT | DESCRIPTION | STACK |
 |---------|-------------|-------|
-| [Widget-Guid](https://github.com/6p99/Widget-Guid) | وصف مشروعك هون | التقنية المستخدمة |
+| [Widget-Guid](https://github.com/6p99/Widget-Guid) | Discord Profile Widget — Creation Guide |
 ---
 
 ## METRICS
