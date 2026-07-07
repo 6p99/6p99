@@ -12,5 +12,3 @@ primary = ["Fun Projects", "Learning", "Random Experiments"]
 stack   = ["TypeScript", "Node.js", "Python", "HTML"]
 ops     = ["Windows", "Git"]
 
-$ contact --discord "mjhol"
-$ contact --status  "Coding without a purpose, just enjoying the process."
