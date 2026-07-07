@@ -24,10 +24,7 @@ LAST_UPDATED:  2026-07-07 00:00 UTC
 
 | PROJECT | DESCRIPTION | STACK |
 |---------|-------------|-------|
-| [Grow-A-Garden-2-Bot](https://github.com/6p99/REPO_NAME) | Live stock tracker for Grow a Garden 2, scrapes real-time data with auto-alerts | discord.js v14 |
-| [Discord-RPC-Manager](https://github.com/6p99/REPO_NAME) | Rich Presence manager panel with per-user Application ID isolation, Components v2 | discord.js v14 |
-| [RalWil-Store](https://github.com/6p99/REPO_NAME) | Storefront for custom Discord bots and automation tools | Node.js |
-
+| [Widget-Guid](https://github.com/6p99/Widget-Guid) | وصف مشروعك هون | التقنية المستخدمة |
 ---
 
 ## METRICS
