@@ -30,7 +30,7 @@ LAST_UPDATED:  2026-07-07 00:00 UTC
 ## METRICS
 
 <div align="center">
-<img src="https://gist.githubusercontent.com/6p99/GIST_ID/raw/metrics.svg" width="100%" />
+<img src="https://gist.githubusercontent.com/6p99/74ff525cc116e1654a464b09b2117a12/raw/metrics.svg" width="100%" />
 </div>
 
 ---
