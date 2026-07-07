@@ -50,8 +50,8 @@ LAST_UPDATED:  2026-07-07 00:00 UTC
 ## CONTACT
 
 ```bash
-$ contact --discord "YOUR_DISCORD"
-$ contact --email   "YOUR_EMAIL"
+$ contact --discord "6p_9"
+$ contact --email   "#######"
 ```
 
 <div align="center">
