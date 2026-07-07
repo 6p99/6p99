@@ -14,12 +14,6 @@ ops     = ["Windows", "Git"]
 
 
 
-
-PROJECT,DESCRIPTION,STACK
-My-First-Bot,Breaking and testing random code just for fun,Python · Node.js
-Web-Sandbox,A sandbox environment for designing simple web pages,HTML · CSS
-
-
-📡 CONTACT
-
-$contact --discord "mjhol"$ contact --status  "Coding without a purpose, just enjoying the process."
+CONTACT
+$ contact --discord "mjhol"
+$ contact --status  "Coding without a purpose, just enjoying the process."
