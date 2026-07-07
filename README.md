@@ -9,7 +9,7 @@ status    = "active"
 [focus]
 primary   = ["Discord Bot Development", "WhatsApp Automation", "Cybersecurity"]
 stack     = ["JavaScript", "Node.js", "discord.js", "Python", "discord.py"]
-ops       = ["Termux (Android)", "Linux", "Git", "Windows " ]
+ops       = ["Termux (Android)", "Linux", "Git", "PC " ]
 
 [live_stats]
 STREAK:        0
