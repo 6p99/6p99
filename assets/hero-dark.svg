@@ -1,0 +1,261 @@
+<svg width="1180" height="610" viewBox="0 0 1180 610" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030303"/>
+      <stop offset="100%" stop-color="#0B0B0B"/>
+    </linearGradient>
+    <linearGradient id="roleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#B5B5B5"/>
+      <stop offset="100%" stop-color="#4A4A4A">
+        <animate attributeName="offset" values="1;0.4;1" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="borderShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,.10)" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9">
+        <animate attributeName="offset" values="0;1" dur="4.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="rgba(255,255,255,.10)" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.02 0"/>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cardClip"><rect x="0" y="0" width="1180" height="610" rx="26"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="1180" height="610" fill="url(#bgGrad)"/>
+    <rect width="1180" height="610" filter="url(#noise)"/>
+
+    <!-- floating radial glows -->
+    <circle cx="120" cy="80" r="220" fill="#FFFFFF" opacity="0.05">
+      <animate attributeName="cy" values="80;140;80" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1030" cy="510" r="260" fill="#FFFFFF" opacity="0.05">
+      <animate attributeName="cy" values="510;570;510" dur="10s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- scanline sweep -->
+    <rect x="0" y="0" width="1180" height="3" fill="rgba(255,255,255,.08)">
+      <animate attributeName="y" values="0;610;0" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <circle cx="703" cy="194" r="1.6" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="194;157.9319655761912;194" dur="6.2s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="6.2s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="158" cy="559" r="1.3" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="559;531.8002126698433;559" dur="6.4s" begin="1.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="6.4s" begin="1.0s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="909" cy="100" r="2.2" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="100;77.08874277864568;100" dur="6.6s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="6.6s" begin="2.5s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="166" cy="446" r="1.1" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="446;415.75337224538396;446" dur="7.1s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="7.1s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="898" cy="187" r="1.8" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="187;156.6743399057181;187" dur="8.9s" begin="2.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="8.9s" begin="2.7s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="251" cy="232" r="1.5" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="232;212.61864255058688;232" dur="8.7s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="8.7s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="461" cy="548" r="2.0" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="548;523.0887622517106;548" dur="8.1s" begin="2.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="8.1s" begin="2.3s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="968" cy="410" r="1.4" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="410;376.62212245794944;410" dur="10.0s" begin="1.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="10.0s" begin="1.0s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="654" cy="546" r="2.2" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="546;521.6653691724159;546" dur="9.6s" begin="3.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="9.6s" begin="3.9s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="281" cy="564" r="1.6" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="564;542.6563402374688;564" dur="9.8s" begin="2.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="9.8s" begin="2.0s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="120" cy="119" r="2.1" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="119;81.73948813972046;119" dur="8.9s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="8.9s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="757" cy="548" r="1.8" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="548;511.5207088287241;548" dur="8.3s" begin="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="8.3s" begin="3.8s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="1010" cy="106" r="1.1" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="106;73.76316520039128;106" dur="9.5s" begin="4.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="9.5s" begin="4.0s" repeatCount="indefinite"/>
+    </circle>
+<circle cx="952" cy="331" r="2.0" fill="#FFFFFF" opacity="0.35">
+      <animate attributeName="cy" values="331;305.3658843748541;331" dur="10.4s" begin="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="10.4s" begin="3.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- outer border shimmer -->
+    <rect x="1" y="1" width="1178" height="608" rx="25" fill="none" stroke="url(#borderShimmer)" stroke-width="1.5"/>
+
+    <!-- left panel -->
+    <rect x="30" y="30" width="408" height="550" rx="20" fill="#101010" fill-opacity="0.55" stroke="rgba(255,255,255,.10)" stroke-width="1"/>
+    <g transform="translate(70,220)" font-family="monospace" font-size="15" fill="#B5B5B5">
+<text x="0" y="0" xml:space="preserve">     ______</text>
+<text x="0" y="20" xml:space="preserve">    /  ▢▢  \</text>
+<text x="0" y="40" xml:space="preserve">   |  ◉  ◉  |</text>
+<text x="0" y="60" xml:space="preserve">   |   __   |</text>
+<text x="0" y="80" xml:space="preserve">   |  \__/  |</text>
+<text x="0" y="100" xml:space="preserve">    \______/</text>
+<text x="0" y="120" xml:space="preserve">   ___|  |___</text>
+<text x="0" y="140" xml:space="preserve">  |    ||    |</text>
+<text x="0" y="160" xml:space="preserve">  |____||____|</text>
+<text x="0" y="180" xml:space="preserve">     |    |</text>
+<text x="0" y="200" xml:space="preserve">    /|    |\</text>
+<text x="0" y="220" xml:space="preserve">   / |____| \</text>
+</g>
+    <text x="70" y="540" font-family="monospace" font-size="13" fill="#9A9A9A">// 6p99.sys — build: black-white</text>
+
+    <!-- right terminal panel -->
+    <rect x="468" y="30" width="682" height="550" rx="20" fill="#101010" fill-opacity="0.55" stroke="rgba(255,255,255,.10)" stroke-width="1"/>
+
+    <!-- terminal dots -->
+    <circle cx="498" cy="60" r="5" fill="#9A9A9A" opacity="0.6"/>
+    <circle cx="518" cy="60" r="5" fill="#9A9A9A" opacity="0.6"/>
+    <circle cx="538" cy="60" r="5" fill="#9A9A9A" opacity="0.6"/>
+
+    <text x="508" y="110" font-family="'JetBrains Mono', monospace" font-size="22" fill="#F5F5F5">Hi <tspan>👋</tspan></text>
+    <text x="508" y="150" font-family="'JetBrains Mono', monospace" font-size="30" font-weight="700" fill="#F5F5F5">I'm MJHOL <tspan fill="#9A9A9A" font-size="18">(6p99)</tspan></text>
+
+    
+    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="26" fill="url(#roleGrad)" font-weight="600">
+      <tspan opacity="0">Discord Bot Developer
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12.8s" begin="0.0s" repeatCount="indefinite" fill="freeze"/>
+      </tspan>
+    </text>
+
+    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="26" fill="url(#roleGrad)" font-weight="600">
+      <tspan opacity="0">WhatsApp Automation (Baileys)
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12.8s" begin="3.2s" repeatCount="indefinite" fill="freeze"/>
+      </tspan>
+    </text>
+
+    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="26" fill="url(#roleGrad)" font-weight="600">
+      <tspan opacity="0">Cybersecurity Enthusiast
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12.8s" begin="6.4s" repeatCount="indefinite" fill="freeze"/>
+      </tspan>
+    </text>
+
+    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="26" fill="url(#roleGrad)" font-weight="600">
+      <tspan opacity="0">Termux / ARM Specialist
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12.8s" begin="9.600000000000001s" repeatCount="indefinite" fill="freeze"/>
+      </tspan>
+    </text>
+    <rect x="508" y="176" width="10" height="26" fill="#F5F5F5">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+
+    
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="6.6s" fill="freeze"/>
+      <text x="508" y="230" font-family="'JetBrains Mono', monospace" font-size="14.5" fill="#9A9A9A">location : <tspan fill="#F5F5F5">Remote / Middle East</tspan></text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="7.1499999999999995s" fill="freeze"/>
+      <text x="508" y="254" font-family="'JetBrains Mono', monospace" font-size="14.5" fill="#9A9A9A">focus    : <tspan fill="#F5F5F5">Termux &amp; ARM-compatible tooling</tspan></text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="7.699999999999999s" fill="freeze"/>
+      <text x="508" y="278" font-family="'JetBrains Mono', monospace" font-size="14.5" fill="#9A9A9A">server   : <tspan fill="#F5F5F5">discord.gg/nT4vpMvaST</tspan></text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="8.25s" fill="freeze"/>
+      <text x="508" y="302" font-family="'JetBrains Mono', monospace" font-size="14.5" fill="#9A9A9A">github   : <tspan fill="#F5F5F5">github.com/6p99</tspan></text>
+    </g>
+
+    
+    <g transform="translate(508,330)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.0s" fill="freeze"/>
+      <rect rx="16" ry="16" width="108" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="54.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">JavaScript</text>
+    </g>
+
+    <g transform="translate(626,330)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.35s" fill="freeze"/>
+      <rect rx="16" ry="16" width="81" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.35s" repeatCount="indefinite"/>
+      </rect>
+      <text x="40.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Node.js</text>
+    </g>
+
+    <g transform="translate(717,330)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.7s" fill="freeze"/>
+      <rect rx="16" ry="16" width="108" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="54.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">discord.js</text>
+    </g>
+
+    <g transform="translate(835,330)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.05s" fill="freeze"/>
+      <rect rx="16" ry="16" width="72" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.05s" repeatCount="indefinite"/>
+      </rect>
+      <text x="36.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Python</text>
+    </g>
+
+    <g transform="translate(508,374)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.4s" fill="freeze"/>
+      <rect rx="16" ry="16" width="108" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="54.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">discord.py</text>
+    </g>
+
+    <g transform="translate(626,374)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.75s" fill="freeze"/>
+      <rect rx="16" ry="16" width="81" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.75s" repeatCount="indefinite"/>
+      </rect>
+      <text x="40.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Baileys</text>
+    </g>
+
+    <g transform="translate(717,374)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="8.1s" fill="freeze"/>
+      <rect rx="16" ry="16" width="72" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="8.1s" repeatCount="indefinite"/>
+      </rect>
+      <text x="36.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Termux</text>
+    </g>
+
+    <g transform="translate(799,374)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="8.45s" fill="freeze"/>
+      <rect rx="16" ry="16" width="45" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="8.45s" repeatCount="indefinite"/>
+      </rect>
+      <text x="22.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Git</text>
+    </g>
+
+    <!-- social icons -->
+    <g transform="translate(508,540)" font-family="'JetBrains Mono', monospace" font-size="13" fill="#9A9A9A">
+      <text x="0" y="0">github.com/6p99</text>
+      <text x="180" y="0">discord.gg/nT4vpMvaST</text>
+    </g>
+
+    <!-- glass reflection -->
+    <rect x="0" y="0" width="1180" height="305" fill="url(#bgGrad)" opacity="0.03"/>
+  </g>
+</svg>
