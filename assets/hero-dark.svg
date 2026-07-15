@@ -22,10 +22,6 @@
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise"/>
       <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.02 0"/>
     </filter>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="cardClip"><rect x="0" y="0" width="1180" height="610" rx="26"/></clipPath>
   </defs>
 
@@ -33,7 +29,6 @@
     <rect width="1180" height="610" fill="url(#bgGrad)"/>
     <rect width="1180" height="610" filter="url(#noise)"/>
 
-    <!-- floating radial glows -->
     <circle cx="120" cy="80" r="220" fill="#FFFFFF" opacity="0.05">
       <animate attributeName="cy" values="80;140;80" dur="9s" repeatCount="indefinite"/>
     </circle>
@@ -41,7 +36,6 @@
       <animate attributeName="cy" values="510;570;510" dur="10s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- scanline sweep -->
     <rect x="0" y="0" width="1180" height="3" fill="rgba(255,255,255,.08)">
       <animate attributeName="y" values="0;610;0" dur="7s" repeatCount="indefinite"/>
     </rect>
@@ -103,31 +97,30 @@
       <animate attributeName="opacity" values="0.15;0.55;0.15" dur="10.4s" begin="3.8s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- outer border shimmer -->
     <rect x="1" y="1" width="1178" height="608" rx="25" fill="none" stroke="url(#borderShimmer)" stroke-width="1.5"/>
 
     <!-- left panel -->
     <rect x="30" y="30" width="408" height="550" rx="20" fill="#101010" fill-opacity="0.55" stroke="rgba(255,255,255,.10)" stroke-width="1"/>
-    <g transform="translate(70,220)" font-family="monospace" font-size="15" fill="#B5B5B5">
-<text x="0" y="0" xml:space="preserve">     ______</text>
-<text x="0" y="20" xml:space="preserve">    /  ▢▢  \</text>
-<text x="0" y="40" xml:space="preserve">   |  ◉  ◉  |</text>
-<text x="0" y="60" xml:space="preserve">   |   __   |</text>
-<text x="0" y="80" xml:space="preserve">   |  \__/  |</text>
-<text x="0" y="100" xml:space="preserve">    \______/</text>
-<text x="0" y="120" xml:space="preserve">   ___|  |___</text>
-<text x="0" y="140" xml:space="preserve">  |    ||    |</text>
-<text x="0" y="160" xml:space="preserve">  |____||____|</text>
-<text x="0" y="180" xml:space="preserve">     |    |</text>
-<text x="0" y="200" xml:space="preserve">    /|    |\</text>
-<text x="0" y="220" xml:space="preserve">   / |____| \</text>
+    <g transform="translate(90,180)" font-family="monospace" font-size="17" font-weight="600" fill="#B5B5B5">
+<text x="0" y="0" xml:space="preserve">      ________</text>
+<text x="0" y="21" xml:space="preserve">     /   __   \</text>
+<text x="0" y="42" xml:space="preserve">    |   |##|   |</text>
+<text x="0" y="63" xml:space="preserve">    |  (o)(o)  |</text>
+<text x="0" y="84" xml:space="preserve">    |    __    |</text>
+<text x="0" y="105" xml:space="preserve">    |   |__|   |</text>
+<text x="0" y="126" xml:space="preserve">     \________/</text>
+<text x="0" y="147" xml:space="preserve">    ____|  |____</text>
+<text x="0" y="168" xml:space="preserve">   |    |  |    |</text>
+<text x="0" y="189" xml:space="preserve">   |____|  |____|</text>
+<text x="0" y="210" xml:space="preserve">        |  |</text>
+<text x="0" y="231" xml:space="preserve">       /|  |\</text>
+<text x="0" y="252" xml:space="preserve">      / |__| \</text>
 </g>
     <text x="70" y="540" font-family="monospace" font-size="13" fill="#9A9A9A">// 6p99.sys — build: black-white</text>
 
     <!-- right terminal panel -->
     <rect x="468" y="30" width="682" height="550" rx="20" fill="#101010" fill-opacity="0.55" stroke="rgba(255,255,255,.10)" stroke-width="1"/>
 
-    <!-- terminal dots -->
     <circle cx="498" cy="60" r="5" fill="#9A9A9A" opacity="0.6"/>
     <circle cx="518" cy="60" r="5" fill="#9A9A9A" opacity="0.6"/>
     <circle cx="538" cy="60" r="5" fill="#9A9A9A" opacity="0.6"/>
@@ -136,27 +129,21 @@
     <text x="508" y="150" font-family="'JetBrains Mono', monospace" font-size="30" font-weight="700" fill="#F5F5F5">I'm MJHOL <tspan fill="#9A9A9A" font-size="18">(6p99)</tspan></text>
 
     
-    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="26" fill="url(#roleGrad)" font-weight="600">
+    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="25" fill="url(#roleGrad)" font-weight="600">
       <tspan opacity="0">Discord Bot Developer
-        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12.8s" begin="0.0s" repeatCount="indefinite" fill="freeze"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="9.600000000000001s" begin="0.0s" repeatCount="indefinite"/>
       </tspan>
     </text>
 
-    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="26" fill="url(#roleGrad)" font-weight="600">
-      <tspan opacity="0">WhatsApp Automation (Baileys)
-        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12.8s" begin="3.2s" repeatCount="indefinite" fill="freeze"/>
+    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="25" fill="url(#roleGrad)" font-weight="600">
+      <tspan opacity="0">Learning Software Engineering
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="9.600000000000001s" begin="3.2s" repeatCount="indefinite"/>
       </tspan>
     </text>
 
-    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="26" fill="url(#roleGrad)" font-weight="600">
+    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="25" fill="url(#roleGrad)" font-weight="600">
       <tspan opacity="0">Cybersecurity Enthusiast
-        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12.8s" begin="6.4s" repeatCount="indefinite" fill="freeze"/>
-      </tspan>
-    </text>
-
-    <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="26" fill="url(#roleGrad)" font-weight="600">
-      <tspan opacity="0">Termux / ARM Specialist
-        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="12.8s" begin="9.600000000000001s" repeatCount="indefinite" fill="freeze"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="9.600000000000001s" begin="6.4s" repeatCount="indefinite"/>
       </tspan>
     </text>
     <rect x="508" y="176" width="10" height="26" fill="#F5F5F5">
@@ -171,7 +158,7 @@
 
     <g opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.5s" begin="7.1499999999999995s" fill="freeze"/>
-      <text x="508" y="254" font-family="'JetBrains Mono', monospace" font-size="14.5" fill="#9A9A9A">focus    : <tspan fill="#F5F5F5">Termux &amp; ARM-compatible tooling</tspan></text>
+      <text x="508" y="254" font-family="'JetBrains Mono', monospace" font-size="14.5" fill="#9A9A9A">focus    : <tspan fill="#F5F5F5">Learning Software Engineering</tspan></text>
     </g>
 
     <g opacity="0">
@@ -185,77 +172,129 @@
     </g>
 
     
-    <g transform="translate(508,330)" opacity="0">
+    <g transform="translate(508,320)" opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.0s" fill="freeze"/>
-      <rect rx="16" ry="16" width="108" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+      <rect rx="15" ry="15" width="72" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
         <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.0s" repeatCount="indefinite"/>
       </rect>
-      <text x="54.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">JavaScript</text>
+      <text x="36.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">Python</text>
     </g>
 
-    <g transform="translate(626,330)" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.35s" fill="freeze"/>
-      <rect rx="16" ry="16" width="81" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.35s" repeatCount="indefinite"/>
+    <g transform="translate(588,320)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.3s" fill="freeze"/>
+      <rect rx="15" ry="15" width="108" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.3s" repeatCount="indefinite"/>
       </rect>
-      <text x="40.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Node.js</text>
+      <text x="54.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">JavaScript</text>
     </g>
 
-    <g transform="translate(717,330)" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.7s" fill="freeze"/>
-      <rect rx="16" ry="16" width="108" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.7s" repeatCount="indefinite"/>
+    <g transform="translate(704,320)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.6s" fill="freeze"/>
+      <rect rx="15" ry="15" width="108" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.6s" repeatCount="indefinite"/>
       </rect>
-      <text x="54.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">discord.js</text>
+      <text x="54.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">TypeScript</text>
     </g>
 
-    <g transform="translate(835,330)" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.05s" fill="freeze"/>
-      <rect rx="16" ry="16" width="72" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.05s" repeatCount="indefinite"/>
+    <g transform="translate(820,320)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="6.9s" fill="freeze"/>
+      <rect rx="15" ry="15" width="54" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="6.9s" repeatCount="indefinite"/>
       </rect>
-      <text x="36.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Python</text>
+      <text x="27.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">Java</text>
     </g>
 
-    <g transform="translate(508,374)" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.4s" fill="freeze"/>
-      <rect rx="16" ry="16" width="108" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.4s" repeatCount="indefinite"/>
+    <g transform="translate(882,320)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.2s" fill="freeze"/>
+      <rect rx="15" ry="15" width="36" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.2s" repeatCount="indefinite"/>
       </rect>
-      <text x="54.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">discord.py</text>
+      <text x="18.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">C#</text>
     </g>
 
-    <g transform="translate(626,374)" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.75s" fill="freeze"/>
-      <rect rx="16" ry="16" width="81" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.75s" repeatCount="indefinite"/>
+    <g transform="translate(508,362)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.5s" fill="freeze"/>
+      <rect rx="15" ry="15" width="45" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.5s" repeatCount="indefinite"/>
       </rect>
-      <text x="40.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Baileys</text>
+      <text x="22.5" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">C++</text>
     </g>
 
-    <g transform="translate(717,374)" opacity="0">
+    <g transform="translate(561,362)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="7.8s" fill="freeze"/>
+      <rect rx="15" ry="15" width="36" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="7.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="18.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">Go</text>
+    </g>
+
+    <g transform="translate(605,362)" opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.6s" begin="8.1s" fill="freeze"/>
-      <rect rx="16" ry="16" width="72" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+      <rect rx="15" ry="15" width="54" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
         <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="8.1s" repeatCount="indefinite"/>
       </rect>
-      <text x="36.0" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Termux</text>
+      <text x="27.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">Rust</text>
     </g>
 
-    <g transform="translate(799,374)" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="8.45s" fill="freeze"/>
-      <rect rx="16" ry="16" width="45" height="30" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="8.45s" repeatCount="indefinite"/>
+    <g transform="translate(667,362)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="8.4s" fill="freeze"/>
+      <rect rx="15" ry="15" width="72" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="8.4s" repeatCount="indefinite"/>
       </rect>
-      <text x="22.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" fill="#F5F5F5">Git</text>
+      <text x="36.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">Kotlin</text>
     </g>
 
-    <!-- social icons -->
-    <g transform="translate(508,540)" font-family="'JetBrains Mono', monospace" font-size="13" fill="#9A9A9A">
+    <g transform="translate(747,362)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="8.7s" fill="freeze"/>
+      <rect rx="15" ry="15" width="63" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="8.7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="31.5" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">Swift</text>
+    </g>
+
+    <g transform="translate(818,362)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="9.0s" fill="freeze"/>
+      <rect rx="15" ry="15" width="45" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="9.0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="22.5" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">PHP</text>
+    </g>
+
+    <g transform="translate(871,362)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="9.3s" fill="freeze"/>
+      <rect rx="15" ry="15" width="45" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="9.3s" repeatCount="indefinite"/>
+      </rect>
+      <text x="22.5" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">SQL</text>
+    </g>
+
+    <g transform="translate(508,404)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="9.6s" fill="freeze"/>
+      <rect rx="15" ry="15" width="81" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="9.6s" repeatCount="indefinite"/>
+      </rect>
+      <text x="40.5" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">Node.js</text>
+    </g>
+
+    <g transform="translate(597,404)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="9.9s" fill="freeze"/>
+      <rect rx="15" ry="15" width="108" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="9.9s" repeatCount="indefinite"/>
+      </rect>
+      <text x="54.0" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">discord.js</text>
+    </g>
+
+    <g transform="translate(713,404)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="10.2s" fill="freeze"/>
+      <rect rx="15" ry="15" width="45" height="28" fill="#0F0F0F" stroke="rgba(255,255,255,.18)" stroke-width="1">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="10.2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="22.5" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F5F5F5">Git</text>
+    </g>
+
+    <g transform="translate(508,570)" font-family="'JetBrains Mono', monospace" font-size="13" fill="#9A9A9A">
       <text x="0" y="0">github.com/6p99</text>
       <text x="180" y="0">discord.gg/nT4vpMvaST</text>
     </g>
-
-    <!-- glass reflection -->
-    <rect x="0" y="0" width="1180" height="305" fill="url(#bgGrad)" opacity="0.03"/>
   </g>
 </svg>
