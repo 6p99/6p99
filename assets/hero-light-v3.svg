@@ -101,20 +101,22 @@
 
     <!-- left panel -->
     <rect x="30" y="30" width="408" height="550" rx="20" fill="#F0F0F0" fill-opacity="0.55" stroke="rgba(0,0,0,.10)" stroke-width="1"/>
-    
-    <defs>
-      <clipPath id="avatarClip"><circle cx="234.0" cy="295.0" r="90"/></clipPath>
-    </defs>
-    <circle cx="234.0" cy="295.0" r="98" fill="none" stroke="#000000" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6">
-      <animateTransform attributeName="transform" type="rotate" from="0 234.0 295.0" to="360 234.0 295.0" dur="18s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="234.0" cy="295.0" r="92" fill="none" stroke="rgba(0,0,0,.10)" stroke-width="1.5"/>
-    <image href="https://avatars.githubusercontent.com/u/252145943?s=400&amp;u=a79e6d85e2f4cae4f1da133130272d57c43f6475&amp;v=4" x="144.0" y="205.0" width="180" height="180" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
-    <circle cx="234.0" cy="295.0" r="92" fill="none" stroke="#000000" stroke-width="1" opacity="0.5">
-      <animate attributeName="r" values="92;100;92" dur="3.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0;0.5" dur="3.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="234.0" y="425.0" text-anchor="middle" font-family="monospace" font-size="13" fill="#5A5A5A">// 6p99.sys — build: black-white</text>
+    <g transform="translate(90,180)" font-family="monospace" font-size="17" font-weight="600" fill="#4A4A4A">
+<text x="0" y="0" xml:space="preserve">      ________</text>
+<text x="0" y="21" xml:space="preserve">     /   __   \</text>
+<text x="0" y="42" xml:space="preserve">    |   |##|   |</text>
+<text x="0" y="63" xml:space="preserve">    |  (o)(o)  |</text>
+<text x="0" y="84" xml:space="preserve">    |    __    |</text>
+<text x="0" y="105" xml:space="preserve">    |   |__|   |</text>
+<text x="0" y="126" xml:space="preserve">     \________/</text>
+<text x="0" y="147" xml:space="preserve">    ____|  |____</text>
+<text x="0" y="168" xml:space="preserve">   |    |  |    |</text>
+<text x="0" y="189" xml:space="preserve">   |____|  |____|</text>
+<text x="0" y="210" xml:space="preserve">        |  |</text>
+<text x="0" y="231" xml:space="preserve">       /|  |\</text>
+<text x="0" y="252" xml:space="preserve">      / |__| \</text>
+</g>
+    <text x="70" y="540" font-family="monospace" font-size="13" fill="#5A5A5A">// 6p99.sys — build: black-white</text>
 
     <!-- right terminal panel -->
     <rect x="468" y="30" width="682" height="550" rx="20" fill="#F0F0F0" fill-opacity="0.55" stroke="rgba(0,0,0,.10)" stroke-width="1"/>
