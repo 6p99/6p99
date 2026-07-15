@@ -2,11 +2,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=180&section=header&text=6p99%20//%20MJHOL&fontColor=FFFFFF&fontSize=46&fontAlignY=38&desc=Discord%20Bot%20Developer&descAlignY=58&descAlign=50" width="100%"/>
 
-<img src="https://avatars.githubusercontent.com/u/252145943?v=4" width="140" style="border-radius:50%;border:2px solid #FFFFFF;" alt="6p99"/>
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark-v3.svg">
-  <img src="assets/hero-light-v3.svg" alt="6p99 hero banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark-v2.svg">
+  <img src="assets/hero-light-v2.svg" alt="6p99 hero banner" width="100%">
 </picture>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3000&pause=800&color=FFFFFF&center=true&vCenter=true&width=600&lines=Discord+Bot+Developer;Learning+Software+Engineering;Cybersecurity+Enthusiast" alt="Typing SVG"/>
