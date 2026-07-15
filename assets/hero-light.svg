@@ -129,19 +129,19 @@
     
     <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="25" fill="url(#roleGrad)" font-weight="600">
       <tspan opacity="0">Discord Bot Developer
-        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="9.600000000000001s" begin="0.0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0.0000;0.3267;0.3333;1.0000" dur="9.600000000000001s" begin="0s" repeatCount="indefinite"/>
       </tspan>
     </text>
 
     <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="25" fill="url(#roleGrad)" font-weight="600">
       <tspan opacity="0">Learning Software Engineering
-        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="9.600000000000001s" begin="3.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3333;0.3400;0.6600;0.6667;1.0000" dur="9.600000000000001s" begin="0s" repeatCount="indefinite"/>
       </tspan>
     </text>
 
     <text x="508" y="190" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="25" fill="url(#roleGrad)" font-weight="600">
       <tspan opacity="0">Cybersecurity Enthusiast
-        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.85;1" dur="9.600000000000001s" begin="6.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0.0000;0.6667;0.6733;1.0000" dur="9.600000000000001s" begin="0s" repeatCount="indefinite"/>
       </tspan>
     </text>
     <rect x="508" y="176" width="10" height="26" fill="#0A0A0A">
